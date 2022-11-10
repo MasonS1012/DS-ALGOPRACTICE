@@ -20,6 +20,17 @@ class LinkedList {
             this.head = newNode;
         }
     }
+    // prepend method to add something to the very beginingn of the linked list
+    prepend(value) {
+        // make sure the newNodes next value is pointing to the previous head that way it is not lost when reassigned later
+        const newNode = { value: value, next: this.head };
+        // check to see if there is a tail
+        if (!this.tail) {
+            this.tail = newNode;
+        }    
+        this.head = newNode;
+    }
+
         toArray() {
             const elements = [];
             let currNode = this.head;
