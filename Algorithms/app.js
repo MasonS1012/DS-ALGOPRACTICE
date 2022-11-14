@@ -55,7 +55,7 @@ const isPrime = (num) => {
     return true; // runs once
 }
 
-
+``
 
 
 
